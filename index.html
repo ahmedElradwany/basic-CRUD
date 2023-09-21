@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Serif&family=Roboto+Condensed:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>CRUD</title>
+</head>
+<body>
+ <header>
+  <!-- As a heading -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid"> 
+      <span class="navbar-brand mb-0 h1 text-warning">CRUD</span>
+    </div>
+  </nav>
+    </header>
+    <div class="container py-5 home ">
+        <div class="row"></div>
+        <div class="col-md-12">
+        <label for="">productName :</label>
+        <input type="text" id="productNameInput" name="" class="my-2 form-control" placeholder="Enter productName!">
+
+        <label for="">productPrice :</label>
+        <input type="text" id="productPriceInput" name="" class="my-2 form-control" placeholder="Enter productPrice!">
+
+        <label for="">productCategory:</label>
+        <input type="text" id="productCategoryInput" name="" class="my-2 form-control" placeholder="Enter productCategory!">
+
+        <label for="">productDesc:</label>
+        <textarea type="text" id="productDescInput" name="" class="my-2 form-control">
+        </textarea>
+        <button id="addBtn" onclick="addProduct()" class="btn btn-warning my-2">add product</button>
+    </div>
+    <div class="col-md-12">
+        <table class="table table-striped table-hover table-warning my-3 text-center">
+            <thead>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+    </table>
+    </div>
+    </div>
+    <!-- scribt -->
+    <script src="js/first.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/unpkg.com_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+
+
+</body>
+</html>
